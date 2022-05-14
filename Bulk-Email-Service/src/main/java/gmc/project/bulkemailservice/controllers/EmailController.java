@@ -25,7 +25,7 @@ public class EmailController {
 	
 	@GetMapping(path = "/server/status/check/env")
 	public String checkServerStatusEnv() {
-		return "This is Working Ig: " + env.getProperty("mail.developername");
+		return "This is Working Ig: " + env.getProperty("local.server.port");
 	}
 	
 }
